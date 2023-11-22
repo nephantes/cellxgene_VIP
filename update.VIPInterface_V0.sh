@@ -7,7 +7,7 @@ fi
 strPath="$(python -c 'import site; print(site.getsitepackages()[0])')"
 strweb="${strPath}/server/common/web/static/."
 
-cp VIPInterface.py $strPath/server/app/.
+cp VIPInterface_V0.py $strPath/server/app/VIPInterface.py
 cp interface.html $strweb
 cp vip.env $strPath/server/app/. 2>/dev/null | true
 
